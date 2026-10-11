@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>قاعة أفريكانو | ليلة العمر تبدأ من هنا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#E8568A;--violet:#8A63D2;--teal:#1FA58A;--orange:#F08A24;--blue:#2F7DE1;--gold:#D9A441;--pink-l:#FFE3EC;--lav:#F1E9FF;--mint:#DDF4EC;--cream:#FFFCF7;--plum:#3B2A47;--muted:#6B5876;--shadow:0 18px 50px rgba(138,99,210,.16);--shadow-s:0 8px 24px rgba(232,86,138,.12);--r:26px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--cream);color:var(--plum);line-height:1.8;font-size:1.2rem;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 12% 8%,rgba(243,213,138,.30),transparent 45%),radial-gradient(circle at 88% 25%,rgba(255,200,220,.35),transparent 42%),radial-gradient(circle at 50% 95%,rgba(200,180,255,.25),transparent 50%)}
+.c1{color:var(--pink)}.c2{color:var(--violet)}.c3{color:var(--teal)}.c4{color:var(--orange)}.c5{color:var(--blue)}.c6{color:var(--gold)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 18px 90px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,225,238,.18) 60%,rgba(255,252,247,.45)),url('images/hero.jpg') center 25%/cover fixed;overflow:hidden}
+.confetti{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:4}
+.confetti i{position:absolute;top:-8vh;width:11px;height:11px;border-radius:2px;opacity:0;animation:fall linear infinite}
+.confetti i:nth-child(4n){background:var(--gold);border-radius:50%}
+.confetti i:nth-child(4n+1){background:var(--pink);width:9px;height:14px}
+.confetti i:nth-child(4n+2){background:#fff;box-shadow:0 0 6px rgba(0,0,0,.25)}
+.confetti i:nth-child(4n+3){background:var(--teal)}
+.confetti i:nth-child(1){right:6%;animation-duration:9s;animation-delay:0s}
+.confetti i:nth-child(2){right:18%;animation-duration:12s;animation-delay:1.5s}
+.confetti i:nth-child(3){right:29%;animation-duration:8s;animation-delay:.7s}
+.confetti i:nth-child(4){right:41%;animation-duration:14s;animation-delay:2.4s}
+.confetti i:nth-child(5){right:53%;animation-duration:10s;animation-delay:.3s}
+.confetti i:nth-child(6){right:64%;animation-duration:13s;animation-delay:3.1s}
+.confetti i:nth-child(7){right:75%;animation-duration:9.5s;animation-delay:1.1s}
+.confetti i:nth-child(8){right:86%;animation-duration:11s;animation-delay:2s}
+.confetti i:nth-child(9){right:94%;animation-duration:15s;animation-delay:.5s}
+@keyframes fall{0%{transform:translateY(-10vh) rotate(0deg);opacity:0}8%{opacity:.95}100%{transform:translateY(115vh) rotate(760deg);opacity:0}}
+.hero-inner{position:relative;z-index:3;max-width:960px;background:rgba(255,255,255,.66);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:36px;padding:44px 28px 46px;box-shadow:0 24px 70px rgba(59,42,71,.25);border:2px solid rgba(255,255,255,.8)}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-family:'Reem Kufi',sans-serif;font-size:1.15rem;font-weight:700;border:2px solid currentColor;background:#fff;padding:9px 26px;border-radius:100px;margin-bottom:22px}
+.kicker span{display:inline-block;animation:wobble 1.6s ease-in-out infinite}
+.kicker span:nth-child(2){animation-delay:.2s}.kicker span:nth-child(3){animation-delay:.4s}
+.hero h1{font-family:'Aref Ruqaa',serif;font-weight:700;font-size:clamp(3.8rem,14vw,8.2rem);line-height:1.2;background:linear-gradient(100deg,var(--pink) 0%,var(--orange) 35%,var(--violet) 70%,var(--blue) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:4px}
+.hero .tagline{font-family:'Reem Kufi',sans-serif;font-size:clamp(1.7rem,6vw,3rem);font-weight:700;margin-bottom:10px;display:flex;gap:.45em;justify-content:center;flex-wrap:wrap}
+.hero .tagline span{display:inline-block;animation:wobble 1.8s ease-in-out infinite}
+.hero .tagline span:nth-child(2){animation-delay:.25s}.hero .tagline span:nth-child(3){animation-delay:.5s}.hero .tagline span:nth-child(4){animation-delay:.75s}.hero .tagline span:nth-child(5){animation-delay:1s}
+.hero .sub{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--plum);max-width:680px;margin:0 auto 30px;font-weight:600}
+.hero-orn{width:200px;height:2px;margin:18px auto 20px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:1.2rem;padding:17px 40px;border-radius:100px;text-decoration:none;cursor:pointer;border:none;transition:transform .35s cubic-bezier(.2,.9,.3,1.4),box-shadow .35s}
+.btn-gold{background:linear-gradient(135deg,var(--pink),#F08AB0);color:#fff;box-shadow:0 12px 30px rgba(232,86,138,.4)}
+.btn-gold:hover{transform:translateY(-4px) scale(1.04)}
+.btn-ghost{background:#fff;color:var(--plum);border:2px solid var(--violet)}
+.btn-ghost:hover{background:var(--violet);color:#fff;transform:translateY(-4px)}
+.btn-fb{background:var(--blue);color:#fff;box-shadow:0 12px 30px rgba(47,125,225,.35)}
+.btn-fb:hover{transform:translateY(-4px) scale(1.04)}
+.btn-rate{background:linear-gradient(135deg,var(--gold),var(--orange));color:#fff;box-shadow:0 12px 30px rgba(240,138,36,.4)}
+.btn-rate:hover{transform:translateY(-4px) scale(1.04)}
+@keyframes wobble{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(5deg) translateY(-5px)}}
+
+/* MOVING WORDS BANDS */
+.band{overflow:hidden;padding:18px 0;direction:ltr;position:relative;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+.band.b1{background:linear-gradient(90deg,var(--pink-l),var(--lav),var(--mint))}
+.band.b2{background:linear-gradient(90deg,var(--mint),var(--lav),var(--pink-l))}
+.track{display:inline-flex;align-items:center;gap:34px;width:max-content}
+.band .track{animation:toRight 50s linear infinite}
+@keyframes toLeft{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes toRight{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.mw{display:inline-block;font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:clamp(2rem,6vw,3.2rem);animation:wobble 1.4s ease-in-out infinite}
+.track i{font-style:normal;color:var(--gold);font-size:1.6rem}
+
+.wave{display:block;width:100%;height:auto;margin-bottom:-1px}
+section{padding:90px 20px}
+.wrap{max-width:1160px;margin:auto}
+.sec-head{text-align:center;margin-bottom:56px}
+.sec-head h2{font-family:'Aref Ruqaa',serif;font-weight:700;font-size:clamp(2.8rem,8vw,4.6rem);color:var(--plum);line-height:1.3;display:inline-block}
+.sec-head h2 em{font-style:normal;display:inline-block}
+.sec-line{display:flex;align-items:center;justify-content:center;gap:14px;margin:16px 0 16px}
+.sec-line span{height:2px;width:80px;background:linear-gradient(90deg,transparent,var(--gold))}
+.sec-line span:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+.sec-line b{color:var(--gold);font-size:1.1rem}
+.sec-sub{color:var(--muted);font-size:1.3rem;max-width:700px;margin:auto;font-weight:600}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.card{position:relative;background:#fff;border-radius:var(--r);padding:44px 26px 38px;text-align:center;box-shadow:var(--shadow-s);border:2px solid transparent;transition:transform .4s cubic-bezier(.2,.9,.3,1.2),box-shadow .4s;overflow:hidden}
+.card:nth-child(1){border-color:rgba(232,86,138,.35)}.card:nth-child(2){border-color:rgba(138,99,210,.35)}.card:nth-child(3){border-color:rgba(31,165,138,.35)}.card:nth-child(4){border-color:rgba(240,138,36,.4)}
+.card:hover{transform:translateY(-10px);box-shadow:var(--shadow)}
+.card .ico{width:78px;height:78px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;font-size:2.2rem;background:var(--pink-l)}
+.card:nth-child(2) .ico{background:var(--lav)}.card:nth-child(3) .ico{background:var(--mint)}.card:nth-child(4) .ico{background:#FFEBD2}
+.card h3{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:1.9rem;margin-bottom:10px}
+.card:nth-child(1) h3{color:var(--pink)}.card:nth-child(2) h3{color:var(--violet)}.card:nth-child(3) h3{color:var(--teal)}.card:nth-child(4) h3{color:var(--orange)}
+.card p{color:var(--muted);font-size:1.15rem;font-weight:500}
+
+.why{background:linear-gradient(160deg,var(--lav),#FFE8F0)}
+.why-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.why-item{padding:32px 24px;border-radius:24px;background:#fff;box-shadow:var(--shadow-s);text-align:center;transition:.4s;border-top:6px solid var(--pink)}
+.why-item:nth-child(2){border-top-color:var(--teal)}.why-item:nth-child(3){border-top-color:var(--orange)}.why-item:nth-child(4){border-top-color:var(--blue)}
+.why-item:hover{transform:translateY(-6px)}
+.why-item .n{font-size:2.4rem;display:block;margin-bottom:8px}
+.why-item h4{font-family:'Reem Kufi',sans-serif;font-size:1.6rem;margin-bottom:8px;color:var(--pink)}
+.why-item:nth-child(2) h4{color:var(--teal)}.why-item:nth-child(3) h4{color:var(--orange)}.why-item:nth-child(4) h4{color:var(--blue)}
+.why-item p{font-size:1.12rem;color:var(--muted);font-weight:500}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.gallery figure{position:relative;overflow:hidden;border-radius:24px;box-shadow:var(--shadow);aspect-ratio:4/3;border:7px solid #fff}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.3,1)}
+.gallery figure:hover img{transform:scale(1.07)}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;max-width:940px;margin:auto}
+.svc{border-radius:var(--r);padding:50px 30px;text-align:center;box-shadow:var(--shadow-s);transition:.4s}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.svc.hall{background:linear-gradient(160deg,#FFE3EC,#FFF3D6)}
+.svc.cafe{background:linear-gradient(160deg,var(--mint),var(--lav))}
+.svc .big{font-size:3.6rem;display:block;margin-bottom:10px}
+.svc h3{font-family:'Reem Kufi',sans-serif;font-size:2.2rem;margin-bottom:10px}
+.svc.hall h3{color:var(--pink)}.svc.cafe h3{color:var(--teal)}
+.svc p{color:var(--plum);font-size:1.2rem;font-weight:500}
+
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;max-width:900px;margin:auto}
+.review{background:#fff;border-radius:var(--r);padding:34px 28px;box-shadow:var(--shadow-s);border-right:6px solid var(--pink)}
+.review:nth-child(2){border-right-color:var(--teal)}
+.review .q{font-family:'Aref Ruqaa',serif;font-size:3.6rem;color:rgba(232,86,138,.3);line-height:.6;display:block;margin-bottom:12px}
+.review .stars{color:var(--gold);letter-spacing:3px;margin-bottom:8px;font-size:1.4rem}
+.review p{font-size:1.2rem;color:var(--plum);margin-bottom:18px;font-weight:500}
+.review .who{display:flex;align-items:center;gap:12px}
+.review .av{width:50px;height:50px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--pink),var(--orange));display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.2rem;font-family:'Reem Kufi',sans-serif}
+.review:nth-child(2) .av{background:linear-gradient(135deg,var(--teal),var(--blue))}
+.review strong{font-family:'Reem Kufi',sans-serif;font-size:1.15rem;color:var(--violet);display:block}
+.review small{color:var(--muted);font-size:.95rem}
+
+.contact{background:linear-gradient(160deg,var(--mint),var(--lav) 60%,#FFE8F0);text-align:center;position:relative;overflow:hidden}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;max-width:1000px;margin:0 auto 46px}
+.cbox{padding:30px 20px;border-radius:22px;background:#fff;box-shadow:var(--shadow-s);border-top:6px solid var(--pink)}
+.cbox:nth-child(2){border-top-color:var(--teal)}.cbox:nth-child(3){border-top-color:var(--blue)}.cbox:nth-child(4){border-top-color:var(--orange)}.cbox:nth-child(5){border-top-color:var(--violet)}
+.cbox .ico{font-size:2.2rem;margin-bottom:8px;display:block}
+.cbox span{display:block;font-size:1.05rem;color:var(--pink);font-family:'Reem Kufi',sans-serif;margin-bottom:6px;font-weight:700}
+.cbox:nth-child(2) span{color:var(--teal)}.cbox:nth-child(3) span{color:var(--blue)}.cbox:nth-child(4) span{color:var(--orange)}.cbox:nth-child(5) span{color:var(--violet)}
+.cbox a,.cbox strong{color:var(--plum);text-decoration:none;font-family:'Reem Kufi',sans-serif;font-size:1.25rem;font-weight:700}
+.cbox a:hover{color:var(--pink)}
+.cbox small{display:block;margin-top:6px;font-size:1rem;color:var(--muted)}
+.qr-box{display:inline-block;background:#fff;padding:16px;border-radius:22px;box-shadow:0 20px 50px rgba(138,99,210,.25)}
+.qr-box img{display:block;width:210px;height:210px;border-radius:10px}
+.qr-note{margin-top:16px;font-size:1.15rem;color:var(--muted);font-weight:600}
+footer{background:var(--lav);color:var(--muted);text-align:center;padding:28px 20px;font-size:1.05rem;font-family:'Reem Kufi',sans-serif}
+footer b{color:var(--pink);font-weight:700}
+footer a{color:var(--violet);text-decoration:none}
+.float-wa{position:fixed;bottom:24px;left:24px;z-index:999;width:64px;height:64px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(37,211,102,.45);text-decoration:none;transition:transform .3s}
+.float-wa:hover{transform:scale(1.1) rotate(8deg)}
+.float-wa svg{width:32px;height:32px;fill:#fff}
+.float-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.5);opacity:0}}
+.reveal{opacity:0;transform:translateY(38px);transition:opacity .9s cubic-bezier(.2,.8,.3,1),transform .9s cubic-bezier(.2,.8,.3,1)}
+.reveal.on{opacity:1;transform:none}
+@media(max-width:768px){
+section{padding:64px 16px}
+.hero{background-attachment:scroll;padding:90px 14px 70px}
+.hero-inner{padding:34px 18px 38px}
+.btn{padding:15px 30px;font-size:1.1rem}
+}
+@media(prefers-reduced-motion:reduce){.track,.mw,.tagline span,.kicker span,.confetti i{animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="confetti"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="hero-inner">
+    <div class="kicker c2"><span class="c1">أفراح</span><span class="c4">•</span><span class="c3">خطوبة</span><span class="c4">•</span><span class="c5">مناسبات</span></div>
+    <h1>قاعة أفريكانو</h1>
+    <div class="hero-orn"></div>
+    <p class="tagline"><span class="c1">ليلة</span><span class="c4">العمر</span><span class="c3">تبدأ</span><span class="c5">من</span><span class="c2">هنا</span></p>
+    <p class="sub">مكان يليق بفرحتك… أجواء احتفالية، وذكريات تفضل معاك العمر كله.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="https://wa.me/201110597745?text=عايز%20أحجز%20في%20قاعة%20أفريكانو" target="_blank">احجز واتساب</a>
+      <a class="btn btn-ghost" href="tel:01110597745">اتصل الآن</a>
+      <a class="btn btn-rate" href="https://maps.app.goo.gl/DACrepvLjaKusSv76" target="_blank">⭐ قيّم تجربتك</a>
+      <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=100090607001862" target="_blank">فيسبوك</a>
+    </div>
+  </div>
+</header>
+
+<div class="band b1"><div class="track" data-dir="right"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>عن <em class="c1">القاعة</em></h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">قاعة أفريكانو مش مجرد مكان… هي تجربة كاملة. ديكور، إضاءة، صوتيات، وفريق خدمة محترف — كل حاجة معمولة عشان فرحتك تطلع زي ما بتتمنّى.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal"><div class="ico">🎉</div><h3>حفلات زفاف</h3><p>تنسيق كامل لليلة العمر بكل تفاصيلها، من الكوشة للإضاءة.</p></div>
+      <div class="card reveal"><div class="ico">💍</div><h3>خطوبة</h3><p>أجواء رومانسية دافئة وتنظيم يخلّي اللحظة لا تُنسى.</p></div>
+      <div class="card reveal"><div class="ico">🎂</div><h3>أعياد ميلاد</h3><p>أجواء حلوة تناسب عدد الضيوف وروح الحفلة.</p></div>
+      <div class="card reveal"><div class="ico">🎤</div><h3>مؤتمرات وندوات</h3><p>قاعة مجهزة بالصوتيات والشاشات وتنظيم احترافي.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>ليه <em class="c2">أفريكانو</em>؟</h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">لأن فرحتك تستاهل مكان فاهم معنى التفاصيل.</p>
+    </div>
+    <div class="why-list">
+      <div class="why-item reveal"><span class="n">📍</span><h4>موقع مميز وسهل الوصول</h4><p>في الروضة – طامية – الفيوم، ومساحة واسعة تريّح ضيوفك.</p></div>
+      <div class="why-item reveal"><span class="n">🗂️</span><h4>تنظيم كامل</h4><p>فريق متخصص يشيل عنك كل التفاصيل من الألف للياء.</p></div>
+      <div class="why-item reveal"><span class="n">☕</span><h4>قاعة وكافيتريا</h4><p>مكان واحد يجمع قاعة الأفراح والكافيتريا.</p></div>
+      <div class="why-item reveal"><span class="n">✨</span><h4>أجواء احتفالية حقيقية</h4><p>إضاءة وديكور وصوتيات بتخلّي الجو نابض بالفرحة.</p></div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,45 C240,5 480,95 720,65 C960,35 1200,5 1440,55 L1440,0 L0,0 Z" fill="#FFE8F0"/></svg>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>لقطات من <em class="c4">القاعة</em></h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">شوف المكان بعينك قبل ما تحجز.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="images/1.jpg" alt="كوشة قاعة أفريكانو"></figure>
+      <figure class="reveal"><img src="images/2.jpg" alt="مدخل قاعة أفريكانو"></figure>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(180deg,#FFFCF7,#FFF1F5)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>أقسام <em class="c3">أفريكانو</em></h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">قاعة للأفراح والمناسبات، وكافيتريا.</p>
+    </div>
+    <div class="services">
+      <div class="svc hall reveal"><span class="big">🏛️</span><h3>القاعة</h3><p>لحفلات الزفاف والخطوبة والمناسبات، بأجواء احتفالية ومساحة واسعة.</p></div>
+      <div class="svc cafe reveal"><span class="big">☕</span><h3>الكافيتريا</h3><p>مكان مريح للقاء الأصحاب والعائلة.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>فرحة <em class="c5">عملائنا</em></h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">من تقييمات عملائنا على خرائط جوجل.</p>
+    </div>
+    <div class="reviews">
+      <div class="review reveal"><span class="q">”</span><div class="stars">★★★★☆</div><p>قاعة جيدة جدا والمكان كبير ويتسع لعدد كبير من المدعوين كما انها تقع في الهواء الطلق مما يجعل الجلسة فيها مميزة.</p><div class="who"><div class="av">A</div><div><strong>Ahmed Bakri</strong><small>مرشد محلي على خرائط جوجل</small></div></div></div>
+      <div class="review reveal"><span class="q">”</span><div class="stars">★★★★★</div><p>مكان ممتاز لقضاء ليلة الزفاف.</p><div class="who"><div class="av">H</div><div><strong>Hamada morad Elsharef</strong><small>مرشد محلي على خرائط جوجل</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band b2"><div class="track" data-dir="left"></div></div>
+
+<section class="contact" id="book">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>احجز <em class="c1">الآن</em></h2>
+      <div class="sec-line"><span></span><b>❖</b><span></span></div>
+      <p class="sec-sub">كلمنا وفريقنا هيرد عليك في أسرع وقت، ويحجزلك يومك.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="cbox"><span class="ico">📞</span><span>اتصال مباشر</span><a href="tel:01110597745">01110597745</a></div>
+      <div class="cbox"><span class="ico">💬</span><span>واتساب</span><a href="https://wa.me/201110597745?text=عايز%20أحجز%20في%20قاعة%20أفريكانو" target="_blank">01110597745</a></div>
+      <div class="cbox"><span class="ico">📘</span><span>فيسبوك</span><a href="https://www.facebook.com/profile.php?id=100090607001862" target="_blank">قاعه أفريكانو</a></div>
+      <div class="cbox"><span class="ico">📍</span><span>العنوان</span><strong>الروضة – مركز طامية – الفيوم</strong><a href="https://maps.app.goo.gl/DACrepvLjaKusSv76" target="_blank" style="display:block;margin-top:6px;font-size:1rem;color:var(--pink);">اتفرج على الخريطة</a></div>
+      <div class="cbox"><span class="ico">💳</span><span>اتصالات كاش</span><strong>متاح للدفع</strong><small>01110597745</small></div>
+    </div>
+    <div class="reveal">
+      <div class="btns" style="margin-bottom:42px">
+        <a class="btn btn-gold" href="https://wa.me/201110597745?text=عايز%20أحجز%20في%20قاعة%20أفريكانو" target="_blank">احجز واتساب</a>
+        <a class="btn btn-ghost" href="tel:01110597745">اتصل الآن</a>
+        <a class="btn btn-rate" href="https://maps.app.goo.gl/DACrepvLjaKusSv76" target="_blank">⭐ قيّم تجربتك</a>
+      </div>
+      <div class="qr-box"><img id="qr" alt="QR قاعة أفريكانو"></div>
+      <p class="qr-note">امسح الكود للدخول على صفحة القاعة</p>
+    </div>
+  </div>
+</section>
+
+<a class="float-wa" href="https://wa.me/201110597745?text=عايز%20أحجز%20في%20قاعة%20أفريكانو" target="_blank" aria-label="واتساب">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-2c1.8 1 3.9 1.5 6.1 1.5h.2C24.6 28.5 30 23.1 30 16.5S24.6 3 16 3zm0 23c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.6 1.2 1.2-4.5-.3-.4A10.4 10.4 0 015.5 15C5.5 9.2 10.2 4.5 16 4.5S26.5 9.2 26.5 15 21.8 26 16 26zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 01-2.5-1.6 9.5 9.5 0 01-1.8-2.2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.6-.7-1.7-1-2.3-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.2 1.3 3.4 2.3 3.6 5.6 5c.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.2-.2-.5-.3z"/></svg>
+</a>
+
+<footer>
+  © 2026 <b>قاعة أفريكانو</b> — جميع الحقوق محفوظة
+  <br>
+  <a href="https://www.facebook.com/profile.php?id=100090607001862" target="_blank">تابعنا على فيسبوك</a>
+  &nbsp;|&nbsp;
+  <span>الروضة – طامية – الفيوم</span>
+</footer>
+
+<script>
+// غيّر الرابط ده بعد ما ترفع اللاندنج على GitHub Pages
+const LANDING_URL = "https://USERNAME.github.io/africano/";
+document.getElementById('qr').src = "https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=0&data=" + encodeURIComponent(LANDING_URL);
+
+// الكلمات المتحركة (بتتحرك وتتهز)
+const words = ["أفراح","خطوبة","مناسبات"];
+const cols = ["#E8568A","#8A63D2","#1FA58A","#F08A24","#2F7DE1","#D9A441"];
+let half = "";
+for (let r = 0; r < 5; r++) words.forEach((w, i) => {
+  half += '<span class="mw" style="color:' + cols[(i + r * 3) % cols.length] + ';animation-delay:' + ((i % 5) * 0.18) + 's">' + w + '</span><i>✦</i>';
+});
+document.querySelectorAll('.track').forEach(t => { t.innerHTML = half + half; });
+
+const io = new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('on'),i*70);io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
